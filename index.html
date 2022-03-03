@@ -4,26 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="treatments" content="کلینیک درمان زخم کرمانشاه" />
+    <meta name="keywords" content="کلینیک درمان زخم کرمانشاه" />
     <link rel="stylesheet" href="style.css" />
+    <!-- leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <div class="header">
       <ul>
-        <li>خانه</li>
-        <li>خدمات ما</li>
-        <li>تماس با ما</li>
+        <a href="#home"><li>خانه</li></a>
+        <a href="#treatments"><li>درمان ها</li></a>
+        <a href="#services"><li>خدمات ما</li></a>
+        <a href="#connection"><li>تماس با ما</li></a>
       </ul>
-      <span>دکتر رسولی نوذری</span>
+      <span>کلینیک درمان زخم کرمانشاه</span>
     </div>
     <div class="wrapper">
-      <div class="home">
+      <div id="home">
         <div class="title">
-          <div>کلینیک درمان زخم</div>
+          <div>کلینیک درمان زخم کرمانشاه</div>
           <h1><span>دکتر</span> رسولی نوذری</h1>
         </div>
+        <div class="description">
+          در کنار تیم ارتوپدی - جراح عروق - متخصص غدد - متخصص عفونی - چشم پزشک -
+          متخصص کلیه - پروتز راندرم های مصنوعی
+        </div>
       </div>
-      <div class="description">
+      <div id="treatments">
         <h3>درمان انواع زخم</h3>
         <ul>
           <li>زخم پا دیابتی</li>
@@ -36,7 +57,7 @@
           <li>زخم سوختگی</li>
         </ul>
       </div>
-      <div class="services">
+      <div id="services">
         <h3>خدمات ما</h3>
         <ul>
           <li>سلول درمانی و PRP</li>
@@ -51,13 +72,34 @@
           <li>گرافت پوست</li>
         </ul>
       </div>
-      <div class="connection">
-        <h3>آدرس</h3>
-        <div>
+      <div id="connection">
+        <h3>تماس با ما</h3>
+        <div class="title">آدرس</div>
+        <div class="value">
           کرمانشاه، پارکینگ شهرداری، دبیر اعظم، کوی لادن، ساختمان پزشکان سورنا،
           طبقه اول، واحد یک
         </div>
+        <br />
+        <div class="title">تلفن های تماس</div>
+        <div class="value">
+          083 37100 232
+          <br />
+          0903 109 8849
+        </div>
+        <br />
+        <div class="title">موقعیت روی نقشه</div>
+        <div id="map"></div>
       </div>
+    </div>
+    <div class="call">
+      <a href="tel:+989031098849">
+        <img
+          src="assets/imgs/phone-icon.png"
+          alt="phone"
+          width="100%"
+          height="100%"
+        />
+      </a>
     </div>
   </body>
 </html>
