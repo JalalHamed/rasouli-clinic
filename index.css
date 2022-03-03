@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'iransans';
+  src: url('/assets/fonts/IRANSansX-Regular.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  direction: rtl;
+  font-family: 'iransans';
+  transition: all 1s;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-items li {
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.header-items li:hover {
+  background-color: #ddd;
+}
