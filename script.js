@@ -22,5 +22,5 @@ function init() {
 }
 
 window.addEventListener('load', () => {
-  setTimeout(init, 1000);
+  setTimeout(init, 1500);
 });

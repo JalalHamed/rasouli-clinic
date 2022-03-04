@@ -16,8 +16,7 @@ html {
 }
 
 body {
-  color: '#000';
-  background-color: #ddd;
+  color: #000;
   direction: rtl;
   font-family: 'iransans';
   transition: all 1s;
@@ -51,6 +50,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 99;
+  user-select: none;
 }
 
 .header span {
@@ -128,7 +128,7 @@ a {
 }
 
 #connection {
-  height: 110vh;
+  height: 100vh;
   padding-top: 5rem;
 }
 
@@ -153,7 +153,10 @@ a {
 }
 
 #map {
+  /* display: block; */
   height: 18rem;
+  /* width: 40rem;
+  margin: 0 auto !important; */
   z-index: 1;
 }
 
@@ -165,11 +168,13 @@ a {
   right: 2rem;
   z-index: 100;
   cursor: pointer;
+  user-select: none;
 }
 
 @media only screen and (max-width: 900px) {
-  .header {
-    font-size: 15px;
+  body,
+  html {
+    font-size: 12px;
   }
 
   .header span {
@@ -193,8 +198,14 @@ a {
   }
 
   #connection {
-    height: 170vh;
+    height: 120vh;
   }
+  /* 
+  #map {
+    height: 16rem;
+    width: 10rem;
+    margin: 0 2rem;
+  } */
 
   .call {
     bottom: 1rem;
