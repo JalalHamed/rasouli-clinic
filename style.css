@@ -27,6 +27,16 @@ a {
   color: #000;
 }
 
+.justify-center {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.justify-right {
+  text-align: justify;
+  text-align-last: right;
+}
+
 .bg-image {
   background-image: url('assets/imgs/medical-preload.jpg');
   background-repeat: no-repeat;
@@ -68,20 +78,64 @@ a {
 }
 
 .header ul li:hover {
-  background-color: #ddd;
+  background-color: #d8e2e4;
 }
 
 .content {
-  width: 60%;
+  width: 50%;
+  margin-right: 5rem;
+  font-size: 1.2rem;
 }
 
-#home .title div {
-  font-size: 1.2rem;
+#home,
+#description,
+#treatments,
+#services,
+#connection {
+  height: 100vh;
+  padding-top: 12rem;
+}
+
+#treatments h3,
+#description h3,
+#services h3,
+#connection h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#treatments ul,
+#services ul {
+  text-align: center;
+  list-style-type: none;
+  columns: 2;
+  margin-top: 2rem;
+}
+
+#treatments ul li,
+#services ul li {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+#treatments ul li:first-child,
+#services ul li:first-child {
+  margin-top: 0;
+}
+
+#home {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#home .title p {
   margin-bottom: 20px;
+  text-decoration: overline;
 }
 
 #home .title h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -93,53 +147,24 @@ a {
   font-weight: bold;
 }
 
-#home .description {
-  padding: 2rem 4rem 0;
-  text-align: center;
+#home .team {
+  font-size: 1rem;
+  padding-top: 2rem;
   color: #333;
 }
 
-#home,
-#treatments,
-#services,
-#connection {
-  text-align: center;
-  height: 100vh;
-  padding-top: 12rem;
-}
-
-#treatments h3,
-#services h3,
-#connection h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-#treatments ul,
-#services ul {
-  list-style-type: none;
-  columns: 2;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-}
-
-#treatments ul li {
-  margin-top: 0.5rem;
+#description div {
+  color: #333;
+  margin-top: 2rem;
+  line-height: 200%;
 }
 
 #connection {
-  height: 140vh;
-  padding-top: 5rem;
+  margin-bottom: 7rem;
 }
 
 #connection h3 {
   padding-bottom: 1rem;
-}
-
-#connection div {
-  font-size: 1.2rem;
-  margin: 0 2rem;
-  text-align: right;
 }
 
 #connection .title {
@@ -150,6 +175,7 @@ a {
 #connection .value {
   padding-right: 1rem;
   direction: ltr;
+  font-size: 1rem;
 }
 
 #map {
@@ -169,6 +195,16 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+  .content {
+    margin-right: 0;
+    padding: 0 1rem;
+  }
+
+  #home .title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   .header {
     font-size: 15px;
   }
@@ -185,7 +221,6 @@ a {
   #treatments,
   #services,
   #connection {
-    height: 100vh;
     padding-top: 5rem;
   }
 
@@ -194,7 +229,12 @@ a {
     columns: 1;
   }
 
-  #connection {
+  #description div {
+    font-size: 1rem;
+  }
+
+  #connection,
+  #description {
     margin-bottom: 15rem;
   }
 
@@ -209,7 +249,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(2);
+  transform: translate(-50%, -50%) scale(3);
 }
 
 .pre-load svg polyline {
