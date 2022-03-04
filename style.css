@@ -12,6 +12,7 @@
 body,
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,6 +41,7 @@ a {
   transition: all 0.5s;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 .header span {
@@ -116,12 +118,8 @@ a {
   margin-top: 0.5rem;
 }
 
-#services {
-  height: 88vh;
-}
-
 #connection {
-  height: 120vh;
+  height: 110vh;
   padding-top: 5rem;
 }
 
@@ -183,6 +181,10 @@ a {
   #treatments ul,
   #services ul {
     columns: 1;
+  }
+
+  #connection {
+    height: 170vh;
   }
 
   .call {
