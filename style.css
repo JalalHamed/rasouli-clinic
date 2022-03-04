@@ -128,7 +128,7 @@ a {
 }
 
 #connection {
-  height: 100vh;
+  height: 140vh;
   padding-top: 5rem;
 }
 
@@ -153,10 +153,7 @@ a {
 }
 
 #map {
-  /* display: block; */
   height: 18rem;
-  /* width: 40rem;
-  margin: 0 auto !important; */
   z-index: 1;
 }
 
@@ -172,9 +169,8 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
-  body,
-  html {
-    font-size: 12px;
+  .header {
+    font-size: 15px;
   }
 
   .header span {
@@ -189,6 +185,7 @@ a {
   #treatments,
   #services,
   #connection {
+    height: 100vh;
     padding-top: 5rem;
   }
 
@@ -198,14 +195,8 @@ a {
   }
 
   #connection {
-    height: 120vh;
+    margin-bottom: 15rem;
   }
-  /* 
-  #map {
-    height: 16rem;
-    width: 10rem;
-    margin: 0 2rem;
-  } */
 
   .call {
     bottom: 1rem;
