@@ -27,6 +27,10 @@ a {
   color: #000;
 }
 
+section {
+  padding: 7rem 0;
+}
+
 .justify-center {
   text-align: justify;
   text-align-last: center;
@@ -85,15 +89,6 @@ a {
   width: 50%;
   margin-right: 5rem;
   font-size: 1.2rem;
-}
-
-#home,
-#description,
-#treatments,
-#services,
-#connection {
-  height: 100vh;
-  padding-top: 12rem;
 }
 
 #treatments h3,
@@ -159,10 +154,6 @@ a {
   line-height: 200%;
 }
 
-#connection {
-  margin-bottom: 7rem;
-}
-
 #connection h3 {
   padding-bottom: 1rem;
 }
@@ -217,13 +208,6 @@ a {
     width: 100%;
   }
 
-  #home,
-  #treatments,
-  #services,
-  #connection {
-    padding-top: 5rem;
-  }
-
   #treatments ul,
   #services ul {
     columns: 1;
@@ -231,11 +215,6 @@ a {
 
   #description div {
     font-size: 1rem;
-  }
-
-  #connection,
-  #description {
-    margin-bottom: 15rem;
   }
 
   .call {
@@ -260,11 +239,11 @@ a {
 }
 
 .pre-load svg polyline#back {
-  stroke: rgba(110, 123, 242, 0.3);
+  stroke: rgba(110, 172, 242, 0.3);
 }
 
 .pre-load svg polyline#front {
-  stroke: #6e7bf2;
+  stroke: #3ea9ff;
   stroke-dasharray: 12, 36;
   stroke-dashoffset: 48;
   animation: dash 1s linear infinite;
