@@ -1,7 +1,28 @@
+// Hooks
+import { useEffect, useRef } from 'react';
+// Leaflet
+import L from 'leaflet';
 // Icons
 import instagramIcon from '../assets/icons/instagram.ico';
 
 export default function ContactUs() {
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    let container = L.DomUtil.get('map');
+    if (container != null) {
+      container._leaflet_id = null;
+    }
+    let map = L.map('map', {
+      zoomControl: false,
+      attributionControl: false,
+    }).setView([34.30847, 47.0629], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(
+      map
+    );
+    L.marker([34.30855, 47.06289]).addTo(map).openPopup();
+  });
+
   return (
     <section id='connection'>
       <h3>تماس با ما</h3>
@@ -39,7 +60,7 @@ export default function ContactUs() {
       </div>
       <br />
       <div className='title'>موقعیت روی نقشه</div>
-      <div id='map'></div>
+      <div id='map' ref={mapRef}></div>
     </section>
   );
 }
