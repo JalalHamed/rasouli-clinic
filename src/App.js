@@ -1,18 +1,16 @@
+// Router
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Hooks
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+// Pages
+import Home from './pages/Home';
+import FootInjury from './pages/FootInjury';
 // Components
 import AppBar from './components/AppBar';
 import Loading from './components/Loading';
-// Sections
-import Home from './sections/Home';
-import Description from './sections/Description';
-import Treatments from './sections/Treatments';
-import Services from './sections/Services';
-import ContactUs from './sections/ContactUs';
-// Icons
-import phoneIcon from './assets/icons/phone.ico';
 
 export default function App() {
+  const introRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -25,20 +23,13 @@ export default function App() {
     <>
       {isLoading && <Loading />}
       <div style={{ display: isLoading ? 'none' : 'block' }}>
-        <div className='bg-image' />
-        <AppBar />
-        <div className='content'>
-          <Home />
-          <Description />
-          <Treatments />
-          <Services />
-          <ContactUs />
-        </div>
-        <div className='call'>
-          <a href='tel:+989031098849'>
-            <img src={phoneIcon} alt='phone' width='100%' height='100%' />
-          </a>
-        </div>
+        <BrowserRouter>
+          <AppBar refs={{ introRef }} />
+          <Routes>
+            <Route path='/' element={<Home refs={{ introRef }} />} />
+            <Route path='/foot-injury' element={<FootInjury />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   );

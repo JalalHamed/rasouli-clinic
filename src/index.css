@@ -70,7 +70,7 @@ section {
   text-align-last: right;
 }
 
-.bg-image {
+.home-bg-image {
   background-image: url('assets/imgs/medical.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -119,22 +119,22 @@ section {
   margin-top: 0;
 }
 
-#home {
+#intro {
   width: fit-content;
   margin: 0 auto;
 }
 
-#home .title p {
+#intro .title p {
   margin-bottom: 20px;
   text-decoration: overline;
 }
 
-#home .title h1 {
+#intro .title h1 {
   font-size: 3rem;
   font-weight: 500;
 }
 
-#home .title span {
+#intro .title span {
   background-color: #000;
   color: #fff;
   border-radius: 15px;
@@ -142,7 +142,7 @@ section {
   font-weight: bold;
 }
 
-#home .team {
+#intro .team {
   font-size: 1rem;
   padding-top: 2rem;
   color: #333;
@@ -191,7 +191,7 @@ section {
     padding: 0 1rem;
   }
 
-  #home .title h1 {
+  #intro .title h1 {
     font-size: 2rem;
     font-weight: 500;
   }

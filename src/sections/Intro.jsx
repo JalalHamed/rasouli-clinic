@@ -1,6 +1,6 @@
-export default function Home() {
+export default function Intro({ theRef }) {
   return (
-    <section id='home'>
+    <section ref={theRef} id='intro'>
       <div className='title'>
         <p>کلینیک درمان زخم</p>
         <h1>

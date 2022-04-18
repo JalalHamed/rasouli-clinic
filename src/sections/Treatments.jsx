@@ -1,9 +1,14 @@
+// Router
+import { Link } from 'react-router-dom';
+
 export default function Treatments() {
   return (
     <section id='treatments'>
       <h3>درمان انواع زخم</h3>
       <ul>
-        <li>زخم پای دیابتی</li>
+        <li>
+          <Link to='foot-injury'>زخم پای دیابتی</Link>
+        </li>
         <li>زخم بستر</li>
         <li>زخم‌های عفونی</li>
         <li>زخم‌های عروقی (واریسی)</li>
