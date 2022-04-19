@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'iransans';
+  src: url('assets/fonts/IRANSansX-Regular.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  direction: rtl;
+  font-family: 'iransans';
+  transition: all 1s;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  user-select: none;
+
+  span {
+    padding: 15px 0 0 20px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background-color: #d8e2e4;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    font-size: 15px;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .call {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+.pre-load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+
+  svg polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  svg polyline#back {
+    stroke: rgba(110, 172, 242, 0.3);
+  }
+
+  svg polyline#front {
+    stroke: #3ea9ff;
+    stroke-dasharray: 12, 36;
+    stroke-dashoffset: 48;
+    animation: dash 1s linear infinite;
+  }
+}
+
+@keyframes dash {
+  62.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

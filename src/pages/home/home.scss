@@ -1,0 +1,155 @@
+.home-bg-image {
+  background-image: url('../../assets/imgs/medical.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  /* filter: blur(8px); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-content {
+  width: 50%;
+  margin-right: 5rem;
+  font-size: 1.2rem;
+
+  section {
+    padding: 7rem 0;
+  }
+
+  .justify-center {
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .justify-right {
+    text-align: justify;
+    text-align-last: right;
+  }
+
+  #treatments h3,
+  #description h3,
+  #services h3,
+  #connection h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  #treatments ul,
+  #services ul {
+    text-align: center;
+    list-style-type: none;
+    columns: 2;
+    margin-top: 2rem;
+  }
+
+  #treatments ul li,
+  #services ul li {
+    margin-top: 0.5rem;
+    color: #333;
+  }
+
+  #treatments ul li:first-child,
+  #services ul li:first-child {
+    margin-top: 0;
+  }
+
+  #intro {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #intro .title p {
+    margin-bottom: 20px;
+    text-decoration: overline;
+  }
+
+  #intro .title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  #intro .title span {
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-weight: bold;
+  }
+
+  #intro .team {
+    font-size: 1rem;
+    padding-top: 2rem;
+    color: #333;
+  }
+
+  #description div {
+    color: #333;
+    margin-top: 2rem;
+    line-height: 200%;
+  }
+
+  #connection h3 {
+    padding-bottom: 1rem;
+  }
+
+  #connection .title {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+
+  #connection .value {
+    padding-right: 1rem;
+    direction: ltr;
+    font-size: 1rem;
+  }
+
+  #map {
+    height: 18rem;
+    z-index: 1;
+  }
+}
+
+.call {
+  width: 4rem;
+  height: 4rem;
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-content {
+    margin-right: 0;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  #intro .title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  #treatments ul,
+  #services ul {
+    columns: 1;
+  }
+
+  #description div {
+    font-size: 1rem;
+  }
+
+  .call {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
