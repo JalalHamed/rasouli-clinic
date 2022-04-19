@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 import Home from './pages/home/Home';
 import FootInjury from './pages/foot-injury/FootInjury';
 // Components
-import AppBar from './components/AppBar';
 import Loading from './components/Loading';
 // Styles
 import './app.scss';
@@ -25,7 +24,6 @@ export default function App() {
       {isLoading && <Loading />}
       <div style={{ display: isLoading ? 'none' : 'block' }}>
         <BrowserRouter>
-          <AppBar />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/foot-injury' element={<FootInjury />} />

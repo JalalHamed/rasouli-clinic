@@ -1,4 +1,5 @@
 // Components
+import AppBar from '../../components/AppBar';
 import GenerateImage from '../../components/GenerateImage';
 // Images
 import grade0 from '../../assets/imgs/foot-injury/0.jpg';
@@ -13,6 +14,7 @@ import Call from '../../components/Call';
 export default function FootInjury() {
   return (
     <>
+      <AppBar notMain />
       <div className='fj-bg-image' />
       <div className='fj-content'>
         <section>

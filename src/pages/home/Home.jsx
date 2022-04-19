@@ -1,4 +1,5 @@
 // Components
+import AppBar from '../../components/AppBar';
 import Call from '../../components/Call';
 // Sections
 import Intro from './sections/Intro';
@@ -12,6 +13,7 @@ import './home.scss';
 export default function Home() {
   return (
     <>
+      <AppBar />
       <div className='home-bg-image' />
       <div className='home-content'>
         <Intro />
