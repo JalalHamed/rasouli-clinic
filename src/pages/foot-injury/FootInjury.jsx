@@ -8,6 +8,7 @@ import grade3 from '../../assets/imgs/foot-injury/3.jpg';
 import grade4 from '../../assets/imgs/foot-injury/4.jpg';
 // Style
 import './footinjury.scss';
+import Call from '../../components/Call';
 
 export default function FootInjury() {
   return (
@@ -154,6 +155,16 @@ export default function FootInjury() {
           </ul>
         </section>
       </div>
+      <div className='bottom-bar'>
+        <div className='address'>
+          آدرس: کرمانشاه، پارکینگ شهرداری، دبیر اعظم، کوی لادن، ساختمان پزشکان
+          سورنا، طبقه اول، واحد یک{' '}
+        </div>
+        <div className='phone'>
+          تلفن‌ های تماس: <span>۰۸۳ ۳۷۱۰۰ ۲۳۲ | ۰۹۰۳ ۱۰۹ ۸۸۴۹</span>
+        </div>
+      </div>
+      <Call bottomPositionValue={window.innerWidth > 900 ? 3.5 : 5.5} />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 // Leaflet
 import L from 'leaflet';
 // Icons
-import instagramIcon from '../assets/icons/instagram.ico';
+import instagramIcon from '../../../assets/icons/instagram.ico';
 
 export default function ContactUs() {
   const mapRef = useRef(null);

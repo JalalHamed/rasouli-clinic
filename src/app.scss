@@ -56,13 +56,31 @@ nav {
   }
 }
 
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.call {
+  width: 4rem;
+  height: 4rem;
+  position: sticky;
+  right: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 15px;
   }
 
-  nav span {
-    display: none;
+  nav {
+    span {
+      display: none;
+    }
   }
 
   .call {
@@ -77,22 +95,24 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%) scale(3);
 
-  svg polyline {
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
+  svg {
+    polyline {
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
 
-  svg polyline#back {
-    stroke: rgba(110, 172, 242, 0.3);
-  }
+    polyline#back {
+      stroke: rgba(110, 172, 242, 0.3);
+    }
 
-  svg polyline#front {
-    stroke: #3ea9ff;
-    stroke-dasharray: 12, 36;
-    stroke-dashoffset: 48;
-    animation: dash 1s linear infinite;
+    polyline#front {
+      stroke: #3ea9ff;
+      stroke-dasharray: 12, 36;
+      stroke-dashoffset: 48;
+      animation: dash 1s linear infinite;
+    }
   }
 }
 
