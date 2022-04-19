@@ -75,7 +75,7 @@ export default function FootInjury() {
           <GenerateImage id={3} src={grade3} />
           <p>درجه 4: نکروز در بخشی از پا یا پاشنه</p>
           <GenerateImage id={4} src={grade4} />
-          <p>درجه 5: نکروز گسترده یا که کل پارا در بر گرفته</p>
+          <p>درجه 5: نکروز گسترده پا که کل پارا در بر گرفته</p>
         </section>
         <section>
           <h3>علل ایجاد زخم پای دیابتی</h3>
@@ -99,7 +99,7 @@ export default function FootInjury() {
             <li>مصرف الکل</li>
             <li>مصرف دخانیات</li>
             <li>بیماری های چشم و کم بینایی به دنبال دیابت</li>
-            <li>بیماری های قبلی</li>
+            <li>بیماری قبلی</li>
             <li>بیماری های کلیوی</li>
             <li>چاقی</li>
           </ul>
@@ -121,7 +121,7 @@ export default function FootInjury() {
           <ol>
             <li>کفش های طراحی شده مخصوص پای شما</li>
             <li>گچ گیری</li>
-            <li>استفاده از برسی</li>
+            <li>استفاده از بریس</li>
             <li>استفاده از باندهای کش مخصوص</li>
             <li>کفش های مخصوص پیشگیری از تشکیل پینه</li>
           </ol>
