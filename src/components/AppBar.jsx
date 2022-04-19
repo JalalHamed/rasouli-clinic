@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function AppBar({ notMain }) {
+  const [status, setStatus] = useState('up');
+
   return (
     <nav>
       <ul>
@@ -13,9 +16,22 @@ export default function AppBar({ notMain }) {
             <a href='#intro'>
               <li>خانه</li>
             </a>
-            <a href='#treatments'>
-              <li>درمان‌ها</li>
-            </a>
+            <div
+              className='dropdown'
+              onMouseEnter={() => setStatus('down')}
+              onMouseLeave={() => setStatus('up')}
+            >
+              <a href='#treatments'>
+                <li>
+                  درمان‌ها <i className={`arrow ${status}`} />
+                </li>
+              </a>
+              <div className='dropdown-content'>
+                <Link to='foot-injury'>
+                  <li>زخم پای دیابتی</li>
+                </Link>
+              </div>
+            </div>
             <a href='#services'>
               <li>خدمات‌ما</li>
             </a>
