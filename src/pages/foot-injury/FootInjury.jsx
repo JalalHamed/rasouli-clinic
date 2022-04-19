@@ -1,11 +1,13 @@
-// Style
-import './footinjury.scss';
+// Components
+import GenerateImage from '../../components/GenerateImage';
 // Images
 import grade0 from '../../assets/imgs/foot-injury/0.jpg';
 import grade1 from '../../assets/imgs/foot-injury/1.jpg';
 import grade2 from '../../assets/imgs/foot-injury/2.jpg';
 import grade3 from '../../assets/imgs/foot-injury/3.jpg';
 import grade4 from '../../assets/imgs/foot-injury/4.jpg';
+// Style
+import './footinjury.scss';
 
 export default function FootInjury() {
   return (
@@ -58,18 +60,18 @@ export default function FootInjury() {
             درجه 0: در این مرحله هنوز زخمی ایجاد نشده است یا زخم قبلی درمان شده
             است.
           </p>
-          <img src={grade0} alt='زخم پای دیابتی - درجه 0' />
+          <GenerateImage id={0} src={grade0} />
           <p>درجه 1 : زخم سطحی بدون گسترش به لایه های عمقی تر</p>
-          <img src={grade1} alt='زخم پای دیابتی - درجه 1' />
+          <GenerateImage id={1} src={grade1} />
           <p>درجه 2: زخم های عمقی با گسترش به تاندون، استخوان مفصل</p>
-          <img src={grade2} alt='زخم پای دیابتی - درجه 2' />
+          <GenerateImage id={2} src={grade2} />
           <p>
             درجه 3: زخم های عمقی تر با آسیب به استخوان ( استئومیلیت) و تاندون (
             تاندونیت)
           </p>
-          <img src={grade3} alt='زخم پای دیابتی - درجه 3' />
+          <GenerateImage id={3} src={grade3} />
           <p>درجه 4: نکروز در بخشی از پا یا پاشنه</p>
-          <img src={grade4} alt='زخم پای دیابتی - درجه 4' />
+          <GenerateImage id={4} src={grade4} />
           <p>درجه 5: نکروز گسترده یا که کل پارا در بر گرفته</p>
         </section>
         <section>
