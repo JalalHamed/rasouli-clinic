@@ -1,8 +1,10 @@
+// Hooks
 import { useState } from 'react';
+// Router
 import { Link } from 'react-router-dom';
 
 export default function AppBar({ notMain }) {
-  const [status, setStatus] = useState('up');
+  const [status, setStatus] = useState('down');
 
   return (
     <nav>
@@ -18,8 +20,8 @@ export default function AppBar({ notMain }) {
             </a>
             <div
               className='dropdown'
-              onMouseEnter={() => setStatus('down')}
-              onMouseLeave={() => setStatus('up')}
+              onMouseEnter={() => setStatus('up')}
+              onMouseLeave={() => setStatus('down')}
             >
               <a href='#treatments'>
                 <li>
