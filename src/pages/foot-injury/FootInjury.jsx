@@ -163,7 +163,7 @@ export default function FootInjury() {
           سورنا، طبقه اول، واحد یک{' '}
         </div>
         <div className='phone'>
-          تلفن‌ های تماس: <span>۰۸۳ ۳۷۱۰۰ ۲۳۲ | ۰۹۰۳ ۱۰۹ ۸۸۴۹</span>
+          تلفن‌ های تماس: <span>۳۷۱۰۰ ۲۳۲ ۰۸۳ | ۸۸۴۹ ۱۰۹ ۰۹۰۳ </span>
         </div>
       </div>
       <Call bottomPositionValue={window.innerWidth > 900 ? 3.5 : 5.5} />
