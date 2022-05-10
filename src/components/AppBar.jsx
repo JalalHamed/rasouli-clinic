@@ -32,6 +32,9 @@ export default function AppBar({ notMain }) {
                 <Link to='foot-injury'>
                   <li>زخم پای دیابتی</li>
                 </Link>
+                <Link to='bedsore'>
+                  <li>زخم بستر</li>
+                </Link>
               </div>
             </div>
             <a href='#services'>
