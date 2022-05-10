@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 // Pages
 import Home from './pages/home/Home';
-import FootInjury from './pages/foot-injury/FootInjury';
+import FootInjury from './pages/treatments/foot-injury/FootInjury';
+import Bedsore from './pages/treatments/bedsore/Bedsore';
 // Components
 import Loading from './components/Loading';
 import ScrollToTop from './components/ScrollToTop';
@@ -29,6 +30,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/foot-injury' element={<FootInjury />} />
+            <Route path='/bedsore' element={<Bedsore />} />
           </Routes>
         </BrowserRouter>
       </div>

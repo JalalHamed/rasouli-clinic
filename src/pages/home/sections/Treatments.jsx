@@ -9,7 +9,9 @@ export default function Treatments() {
         <li>
           <Link to='foot-injury'>زخم پای دیابتی</Link>
         </li>
-        <li>زخم بستر</li>
+        <li>
+          <Link to='bedsore'>زخم بستر</Link>
+        </li>
         <li>زخم‌های عفونی</li>
         <li>زخم‌های عروقی (واریسی)</li>
         <li>زخم ناشی از تصادفات</li>
