@@ -22,7 +22,7 @@ export default function Home() {
         <Services />
         <ContactUs />
       </div>
-      <Call />
+      <Call bottomPositionValue={window.innerWidth > 900 ? 3.5 : 5.5} />
     </>
   );
 }

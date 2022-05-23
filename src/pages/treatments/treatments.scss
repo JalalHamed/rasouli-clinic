@@ -76,24 +76,8 @@
   }
 }
 
-.bottom-bar {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.5s;
-  position: sticky;
-  bottom: 0;
-  z-index: 99;
-  padding: 15px 20px;
-  font-size: 15px;
-}
-
 @media only screen and (max-width: 900px) {
   .content {
     padding: 2rem 1rem 0;
-  }
-
-  .bottom-bar {
-    flex-direction: column;
   }
 }

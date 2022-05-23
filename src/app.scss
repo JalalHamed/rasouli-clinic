@@ -99,6 +99,18 @@ nav {
   user-select: none;
 }
 
+.address-bar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  position: sticky;
+  bottom: 0;
+  z-index: 99;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     font-size: 15px;
@@ -113,6 +125,10 @@ nav {
   .call {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  .address-bar {
+    flex-direction: column;
   }
 }
 

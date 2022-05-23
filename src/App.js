@@ -9,6 +9,7 @@ import Bedsore from './pages/treatments/bedsore/Bedsore';
 // Components
 import Loading from './components/Loading';
 import ScrollToTop from './components/ScrollToTop';
+import AddressBar from './components/AddressBar';
 // Styles
 import './app.scss';
 
@@ -33,6 +34,7 @@ export default function App() {
             <Route path='/bedsore' element={<Bedsore />} />
           </Routes>
         </BrowserRouter>
+        <AddressBar />
       </div>
     </>
   );
