@@ -17,7 +17,9 @@ export default function Treatments() {
         <li>زخم ناشی از تصادفات</li>
         <li>انواع زخم‌های سرطانی</li>
         <li>زخم‌های عفونت جراحی</li>
-        <li>زخم سوختگی</li>
+        <li>
+          <Link to='burn'>زخم سوختگی</Link>
+        </li>
       </ul>
     </section>
   );

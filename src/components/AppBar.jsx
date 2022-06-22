@@ -35,6 +35,9 @@ export default function AppBar({ notMain }) {
                 <Link to='bedsore'>
                   <li>زخم بستر</li>
                 </Link>
+                <Link to='burn'>
+                  <li>سوختگی</li>
+                </Link>
               </div>
             </div>
             <a href='#services'>

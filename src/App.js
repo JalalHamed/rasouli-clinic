@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 // Pages
 import Home from './pages/home/Home';
 import FootInjury from './pages/treatments/foot-injury/FootInjury';
+import Burn from './pages/treatments/burn/Burn';
 import Bedsore from './pages/treatments/bedsore/Bedsore';
 // Components
 import Loading from './components/Loading';
@@ -32,6 +33,7 @@ export default function App() {
             <Route path='/' element={<Home />} />
             <Route path='/foot-injury' element={<FootInjury />} />
             <Route path='/bedsore' element={<Bedsore />} />
+            <Route path='/burn' element={<Burn />} />
           </Routes>
         </BrowserRouter>
         <AddressBar />
